@@ -2,7 +2,7 @@
 class Cards {
    
     int[] value = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
-    String[] suite = {"CLUBS", "DIAMONDS", "HEARTS", "SPADES"};
+    String[] suite = {"CLUBS", "DIAMONDS", "HEARTS" };
     char[] pip = {'A', '2', '3', '4', '5', '6', '7', '8', '9', 't', 'J', 'Q', 'K'};
     public int getSuite(int sequence) {
         return sequence / 13;
@@ -10,6 +10,11 @@ class Cards {
     public int getPip(int sequence) {
         return sequence % 13;
     }
+}
+public class Diamonds {
+	public String bid (player1 , player2) {
+	{
+	
     public int compare(int seq1, int seq2){
         if( getPip(seq1) > getPip(seq2) )
             return seq1;
@@ -26,7 +31,7 @@ class Cards {
    
     }
  
-public class Diamonds { 
+
     public static void main(String[] args) {
         int seq1 = 43;
         int seq2 = 47;
